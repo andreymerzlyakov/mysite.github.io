@@ -6,10 +6,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="zatemnenie">
+        <div id="okno">
+            <p class="modal_head">Вход</p>
+            <input class="modal_input" type="text" value="Логин">
+            <input class="modal_input" type="text" value="Пароль"> 
+            <div class="modal_input_checkbox">
+                <input class="modal_input_check" type="checkbox">
+                <p class="modal_txt">Запомнить</p>
+            </div>
+            <a href="#" id="back" class="close">Войти</a>
+        </div>
+    </div>
     <div class="container">
         <header class="header">
             <div class="header__logo">
-                <img src="img/sign.png" alt="logo">
+                <img class="header_logo_size" src="img/sign.png" alt="logo">
                 <p class="header__logo_name">Видеосервис</p>
             </div>
             <div class="heder__search">
@@ -17,7 +29,9 @@
                 <input class="heder__search_btn" type="button" value="Найти">
             </div>
             <div class="heder__auth">
-                <input class="heder__auth_btn" type="button" value="Войти">
+                <a href="#zatemnenie" id="click" class="heder__auth_btn"> 
+                    <p class="heder__auth_btn_txt">Войти</p>
+                </a>
             </div>
         </header>
         <main>
@@ -70,6 +84,7 @@
                         <p class="TV__gallery_txt_red">13:00   Новости (с субтитрами)</p>
                         <p class="TV__gallery_txt">14:00   Давай поженимся</p>
                         <p class="TV__gallery_txt">15:00   Другие новости</p>
+                    </div>
                 </div>
             </div>
         </main>

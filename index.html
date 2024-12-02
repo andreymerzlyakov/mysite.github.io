@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="zatemnenie">
+        <div id="okno">
+            <p class="modal_head">Вход</p>
+            <input class="modal_input" type="text" value="Логин">
+            <input class="modal_input" type="text" value="Пароль"> 
+            <div class="modal_input_checkbox">
+                <input class="modal_input_check" type="checkbox">
+                <p class="modal_txt">Запомнить</p>
+            </div>
+            <a href="#" id="back" class="close">Войти</a>
+        </div>
+    </div>
     <div class="container">
         <header class="header">
             <div class="header__logo">
@@ -18,7 +30,9 @@
                 <input class="heder__search_btn" type="button" value="Найти">
             </div>
             <div class="heder__auth">
-                <input class="heder__auth_btn" type="button" value="Войти">
+                <a href="#zatemnenie" id="click" class="heder__auth_btn"> 
+                    <p class="heder__auth_btn_txt">Войти</p>
+                </a>
             </div>
         </header>
         <main>
@@ -77,7 +91,6 @@
             </div>
         </div>
         </main>
-        
         <footer class="footer">
             <div class="vector">
                 <div class="vector_img">
@@ -90,7 +103,6 @@
                 </div>
             </div>
         </footer>
-
     </div>
 </body>
 </html>
